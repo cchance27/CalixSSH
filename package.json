@@ -1,0 +1,24 @@
+{
+  "name": "calixssh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.ts",
+  "scripts": {
+    "start": " tsc && node bin/app.js",
+    "start:dist": "node dist/app.js",
+    "start:debug": "node --inspect-brk=0.0.0.0 dist/app.js",
+    "build": "npx tsc",
+    "build:dist": "tsc --build tsconfig.production.json",
+    "bump": "npm version patch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-ssh": "^10.0.2",
+    "tslib": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.27",
+    "typescript": "3.5.1"
+  }
+}
